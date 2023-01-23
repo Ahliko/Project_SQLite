@@ -11,6 +11,8 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QListWidget>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -18,12 +20,20 @@ QT_BEGIN_NAMESPACE
 class Ui_Information
 {
 public:
+    QListWidget *listeAime;
+    QLabel *lb_nom;
 
     void setupUi(QWidget *Information)
     {
         if (Information->objectName().isEmpty())
             Information->setObjectName("Information");
-        Information->resize(400, 300);
+        Information->resize(377, 248);
+        listeAime = new QListWidget(Information);
+        listeAime->setObjectName("listeAime");
+        listeAime->setGeometry(QRect(10, 40, 221, 192));
+        lb_nom = new QLabel(Information);
+        lb_nom->setObjectName("lb_nom");
+        lb_nom->setGeometry(QRect(10, 10, 37, 12));
 
         retranslateUi(Information);
 
@@ -33,6 +43,7 @@ public:
     void retranslateUi(QWidget *Information)
     {
         Information->setWindowTitle(QCoreApplication::translate("Information", "Form", nullptr));
+        lb_nom->setText(QString());
     } // retranslateUi
 
 };

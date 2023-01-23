@@ -1,3 +1,4 @@
+#include "information.h"
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QDebug>
@@ -46,7 +47,11 @@ MainWindow::~MainWindow()
 
 }
 
-
+void MainWindow::on_pushButton_clicked()
+{
+    Information *information = new Information;
+    information -> exec();
+}
 
 void MainWindow::on_pb_connect_clicked()
 {
@@ -69,6 +74,8 @@ void MainWindow::on_pb_connect_clicked()
         case 1: {
             accord = qry.value(2).toInt()==1?"e":"";
             ui->status->setText("Tu es connecté"+accord+" avec le compte "+QString::number(qry.value(1).toInt()));
+            // ouvrir 2eme fenetre
+
             break;
         }
         default:

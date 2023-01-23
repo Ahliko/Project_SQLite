@@ -21,6 +21,7 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+    void on_pushButton_clicked();
 private slots:
 
     void on_pb_connect_clicked();
