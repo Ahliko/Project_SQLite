@@ -12,15 +12,13 @@ class Information;
 class Information : public QWidget
 {
     Q_OBJECT
-
+public:
+    int Id;
 private:
     static QList<QString> lst;
     static void Print_lst();
 
 public:
-    Information(QList<QString> list) {
-        lst = list;
-    };
     explicit Information(QWidget *parent = nullptr);
     ~Information();
 

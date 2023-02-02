@@ -27,6 +27,27 @@ void MainWindow::fermeDb()
     MainWindow::db.close();
 }
 
+QString MainWindow::get_Name()
+{
+    QSqlQuery qry;
+    QString sql = "SELECT login From accounts where idAccount = '" + QString::number(Id) + "'";
+    if(qry.exec(sql)) {
+        qry.next();
+        return qry.value(0).toString();
+    }
+    return nullptr;
+}
+
+int MainWindow::get_id()
+{
+    return Id;
+}
+
+void MainWindow::setId(int newId)
+{
+    Id = newId;
+}
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -44,13 +65,12 @@ MainWindow::~MainWindow()
 {
     delete ui;
     fermeDb();
-
 }
 
-void MainWindow::on_pushButton_clicked()
+void MainWindow::on_connect()
 {
     Information *information = new Information;
-    information -> exec();
+    information -> show();
 }
 
 void MainWindow::on_pb_connect_clicked()
@@ -61,12 +81,9 @@ void MainWindow::on_pb_connect_clicked()
     QSqlQuery qry;
     qDebug() <<"Traitement connexion";
     QString sql = "SELECT COUNT(*) as nb, idAccount, sex FROM accounts WHERE login='"+login+"' AND password='"+pass+"'";
-    qDebug()<<sql;
     if(qry.exec(sql)) {
         qry.next();
-
         int nb=qry.value(0).toInt();
-        std::cout << nb << std::endl;
         switch(nb) {
         case 0:
             ui->status->setText("Mot de passe incorrect...");
@@ -74,8 +91,16 @@ void MainWindow::on_pb_connect_clicked()
         case 1: {
             accord = qry.value(2).toInt()==1?"e":"";
             ui->status->setText("Tu es connecté"+accord+" avec le compte "+QString::number(qry.value(1).toInt()));
-            // ouvrir 2eme fenetre
-
+            // ouvrir 2eme
+            sql = "SELECT idAccount From accounts where login = '" + login + "'";
+            if (qry.exec(sql)) {
+                qry.next();
+                int nb = qry.value(0).toInt();
+                setId(nb);
+            } else {
+                qDebug() << "Erreur sql ??";
+            }
+            on_connect();
             break;
         }
         default:

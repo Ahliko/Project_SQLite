@@ -17,15 +17,17 @@ public:
     static QSqlDatabase db;
     static bool ouvreDb();
     static void fermeDb();
+    static QString get_Name();
+    static int get_id();
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    static void setId(int newId);
+    static int Id;
 
-    void on_pushButton_clicked();
 private slots:
-
     void on_pb_connect_clicked();
-
+    void on_connect();
 private:
     Ui::MainWindow *ui;
 };
