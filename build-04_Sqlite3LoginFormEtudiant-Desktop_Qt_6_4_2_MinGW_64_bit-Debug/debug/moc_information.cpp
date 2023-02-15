@@ -8,6 +8,7 @@
 
 #include <memory>
 #include "../../04_Sqlite3LoginFormEtudiant/information.h"
+#include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'information.h' doesn't include <QObject>."
@@ -57,7 +58,7 @@ Q_CONSTINIT static const uint qt_meta_data_Information[] = {
 };
 
 Q_CONSTINIT const QMetaObject Information::staticMetaObject = { {
-    QMetaObject::SuperData::link<QWidget::staticMetaObject>(),
+    QMetaObject::SuperData::link<MainWindow::staticMetaObject>(),
     qt_meta_stringdata_Information.offsetsAndSizes,
     qt_meta_data_Information,
     qt_static_metacall,
@@ -87,12 +88,12 @@ void *Information::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_Information.stringdata0))
         return static_cast<void*>(this);
-    return QWidget::qt_metacast(_clname);
+    return MainWindow::qt_metacast(_clname);
 }
 
 int Information::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QWidget::qt_metacall(_c, _id, _a);
+    _id = MainWindow::qt_metacall(_c, _id, _a);
     return _id;
 }
 QT_WARNING_POP

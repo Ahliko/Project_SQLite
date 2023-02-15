@@ -115,8 +115,8 @@ compiler_moc_header_make_all: release/moc_information.cpp release/moc_mainwindow
 compiler_moc_header_clean:
 	-$(DEL_FILE) release\moc_information.cpp release\moc_mainwindow.cpp
 release/moc_information.cpp: ../04_Sqlite3LoginFormEtudiant/information.h \
-		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QWidget \
-		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qwidget.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QMainWindow \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qmainwindow.h \
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
 		C:/Qt/6.4.2/mingw_64/include/QtGui/qtguiglobal.h \
 		C:/Qt/6.4.2/mingw_64/include/QtCore/qglobal.h \
@@ -147,6 +147,7 @@ release/moc_information.cpp: ../04_Sqlite3LoginFormEtudiant/information.h \
 		C:/Qt/6.4.2/mingw_64/include/QtGui/qtguiexports.h \
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Qt/6.4.2/mingw_64/include/QtGui/qwindowdefs.h \
 		C:/Qt/6.4.2/mingw_64/include/QtCore/qobjectdefs.h \
 		C:/Qt/6.4.2/mingw_64/include/QtCore/qnamespace.h \
@@ -250,10 +251,8 @@ release/moc_information.cpp: ../04_Sqlite3LoginFormEtudiant/information.h \
 		C:/Qt/6.4.2/mingw_64/include/QtCore/QSizeF \
 		C:/Qt/6.4.2/mingw_64/include/QtGui/QTransform \
 		C:/Qt/6.4.2/mingw_64/include/QtCore/qnativeinterface.h \
-		../04_Sqlite3LoginFormEtudiant/mainwindow.h \
-		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QMainWindow \
-		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qmainwindow.h \
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qtabwidget.h \
+		../04_Sqlite3LoginFormEtudiant/mainwindow.h \
 		C:/Qt/6.4.2/mingw_64/include/QtSql/QtSql \
 		C:/Qt/6.4.2/mingw_64/include/QtSql/QtSqlDepends \
 		C:/Qt/6.4.2/mingw_64/include/QtCore/QtCore \
@@ -435,6 +434,33 @@ release/moc_information.cpp: ../04_Sqlite3LoginFormEtudiant/information.h \
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qmessagebox.h \
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qdialog.h \
+		ui_mainwindow.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.4.2/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.4.2/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.4.2/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QGroupBox \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qgroupbox.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.4.2/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.4.2/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Qt/6.4.2/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Qt/6.4.2/mingw_64/include/QtGui/qtextformat.h \
+		C:/Qt/6.4.2/mingw_64/include/QtGui/qpen.h \
+		C:/Qt/6.4.2/mingw_64/include/QtGui/qtextoption.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QMenuBar \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qmenubar.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qmenu.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QStatusBar \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qstatusbar.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QWidget \
 		release/moc_predefs.h \
 		C:/Qt/6.4.2/mingw_64/bin/moc.exe
 	C:\Qt\6.4.2\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/guiki/OneDrive/Bureau/ynov/Project_SQLite/build-04_Sqlite3LoginFormEtudiant-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.4.2/mingw_64/mkspecs/win32-g++ -IC:/Users/guiki/OneDrive/Bureau/ynov/Project_SQLite/04_Sqlite3LoginFormEtudiant -IC:/Qt/6.4.2/mingw_64/include -IC:/Qt/6.4.2/mingw_64/include/QtWidgets -IC:/Qt/6.4.2/mingw_64/include/QtGui -IC:/Qt/6.4.2/mingw_64/include/QtSql -IC:/Qt/6.4.2/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\04_Sqlite3LoginFormEtudiant\information.h -o release\moc_information.cpp
@@ -790,8 +816,8 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 ####### Compile
 
 release/information.o: ../04_Sqlite3LoginFormEtudiant/information.cpp ../04_Sqlite3LoginFormEtudiant/information.h \
-		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QWidget \
-		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qwidget.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QMainWindow \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qmainwindow.h \
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
 		C:/Qt/6.4.2/mingw_64/include/QtGui/qtguiglobal.h \
 		C:/Qt/6.4.2/mingw_64/include/QtCore/qglobal.h \
@@ -822,6 +848,7 @@ release/information.o: ../04_Sqlite3LoginFormEtudiant/information.cpp ../04_Sqli
 		C:/Qt/6.4.2/mingw_64/include/QtGui/qtguiexports.h \
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Qt/6.4.2/mingw_64/include/QtGui/qwindowdefs.h \
 		C:/Qt/6.4.2/mingw_64/include/QtCore/qobjectdefs.h \
 		C:/Qt/6.4.2/mingw_64/include/QtCore/qnamespace.h \
@@ -925,10 +952,8 @@ release/information.o: ../04_Sqlite3LoginFormEtudiant/information.cpp ../04_Sqli
 		C:/Qt/6.4.2/mingw_64/include/QtCore/QSizeF \
 		C:/Qt/6.4.2/mingw_64/include/QtGui/QTransform \
 		C:/Qt/6.4.2/mingw_64/include/QtCore/qnativeinterface.h \
-		../04_Sqlite3LoginFormEtudiant/mainwindow.h \
-		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QMainWindow \
-		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qmainwindow.h \
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qtabwidget.h \
+		../04_Sqlite3LoginFormEtudiant/mainwindow.h \
 		C:/Qt/6.4.2/mingw_64/include/QtSql/QtSql \
 		C:/Qt/6.4.2/mingw_64/include/QtSql/QtSqlDepends \
 		C:/Qt/6.4.2/mingw_64/include/QtCore/QtCore \
@@ -1110,16 +1135,34 @@ release/information.o: ../04_Sqlite3LoginFormEtudiant/information.cpp ../04_Sqli
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qmessagebox.h \
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qdialog.h \
-		ui_information.h \
+		ui_mainwindow.h \
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.4.2/mingw_64/include/QtGui/qguiapplication.h \
 		C:/Qt/6.4.2/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.4.2/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QGroupBox \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qgroupbox.h \
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QLabel \
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qlabel.h \
 		C:/Qt/6.4.2/mingw_64/include/QtGui/qpicture.h \
 		C:/Qt/6.4.2/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Qt/6.4.2/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Qt/6.4.2/mingw_64/include/QtGui/qtextformat.h \
+		C:/Qt/6.4.2/mingw_64/include/QtGui/qpen.h \
+		C:/Qt/6.4.2/mingw_64/include/QtGui/qtextoption.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QMenuBar \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qmenubar.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qmenu.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QStatusBar \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qstatusbar.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QWidget \
+		ui_information.h \
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QListWidget \
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qlistwidget.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\information.o ..\04_Sqlite3LoginFormEtudiant\information.cpp
@@ -1451,8 +1494,8 @@ release/main.o: ../04_Sqlite3LoginFormEtudiant/main.cpp ../04_Sqlite3LoginFormEt
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o ..\04_Sqlite3LoginFormEtudiant\main.cpp
 
 release/mainwindow.o: ../04_Sqlite3LoginFormEtudiant/mainwindow.cpp ../04_Sqlite3LoginFormEtudiant/information.h \
-		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QWidget \
-		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qwidget.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QMainWindow \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qmainwindow.h \
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
 		C:/Qt/6.4.2/mingw_64/include/QtGui/qtguiglobal.h \
 		C:/Qt/6.4.2/mingw_64/include/QtCore/qglobal.h \
@@ -1483,6 +1526,7 @@ release/mainwindow.o: ../04_Sqlite3LoginFormEtudiant/mainwindow.cpp ../04_Sqlite
 		C:/Qt/6.4.2/mingw_64/include/QtGui/qtguiexports.h \
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Qt/6.4.2/mingw_64/include/QtGui/qwindowdefs.h \
 		C:/Qt/6.4.2/mingw_64/include/QtCore/qobjectdefs.h \
 		C:/Qt/6.4.2/mingw_64/include/QtCore/qnamespace.h \
@@ -1586,10 +1630,8 @@ release/mainwindow.o: ../04_Sqlite3LoginFormEtudiant/mainwindow.cpp ../04_Sqlite
 		C:/Qt/6.4.2/mingw_64/include/QtCore/QSizeF \
 		C:/Qt/6.4.2/mingw_64/include/QtGui/QTransform \
 		C:/Qt/6.4.2/mingw_64/include/QtCore/qnativeinterface.h \
-		../04_Sqlite3LoginFormEtudiant/mainwindow.h \
-		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QMainWindow \
-		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qmainwindow.h \
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qtabwidget.h \
+		../04_Sqlite3LoginFormEtudiant/mainwindow.h \
 		C:/Qt/6.4.2/mingw_64/include/QtSql/QtSql \
 		C:/Qt/6.4.2/mingw_64/include/QtSql/QtSqlDepends \
 		C:/Qt/6.4.2/mingw_64/include/QtCore/QtCore \
@@ -1797,6 +1839,10 @@ release/mainwindow.o: ../04_Sqlite3LoginFormEtudiant/mainwindow.cpp ../04_Sqlite
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QStatusBar \
 		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qstatusbar.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QWidget \
+		ui_information.h \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/QListWidget \
+		C:/Qt/6.4.2/mingw_64/include/QtWidgets/qlistwidget.h \
 		C:/Qt/6.4.2/mingw_64/include/QtCore/QDebug \
 		C:/Qt/6.4.2/mingw_64/include/QtCore/QtGlobal
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o ..\04_Sqlite3LoginFormEtudiant\mainwindow.cpp

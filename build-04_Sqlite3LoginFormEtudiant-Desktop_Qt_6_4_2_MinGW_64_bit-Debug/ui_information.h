@@ -33,7 +33,7 @@ public:
         listeAime->setGeometry(QRect(10, 40, 221, 192));
         lb_nom = new QLabel(Information);
         lb_nom->setObjectName("lb_nom");
-        lb_nom->setGeometry(QRect(10, 10, 37, 12));
+        lb_nom->setGeometry(QRect(10, 10, 221, 16));
 
         retranslateUi(Information);
 
