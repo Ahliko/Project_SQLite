@@ -19,13 +19,15 @@ public:
     static void fermeDb();
     QString get_Name(int id);
     QList<QString> get_Aime(int id);
+    QString get_Name();
     int get_id();
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     void setId(int newId);
 private:
-    int Id;
+    int id;
+
 private slots:
     void on_pb_connect_clicked();
     void on_connect();

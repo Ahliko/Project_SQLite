@@ -33,7 +33,6 @@ QString MainWindow::get_Name(int id)
 {
     QSqlQuery qry;
     QString sql = "SELECT login From accounts where idAccount = '" + QString::number(id) + "'";
-    qDebug() << sql;
     if(qry.exec(sql)) {
         qry.next();
         return qry.value(0).toString();
@@ -57,12 +56,12 @@ QList<QString> MainWindow::get_Aime(int id)
 
 int MainWindow::get_id()
 {
-    return Id;
+    return id;
 }
 
 void MainWindow::setId(int newId)
 {
-    Id = newId;
+    id = newId;
 }
 
 MainWindow::MainWindow(QWidget *parent)
